@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import ImageDropzone from './components/ImageDropzone';
 import ComparisonSlider from './components/ComparisonSlider';
 import { restoreImage } from './services/gemini';
@@ -98,8 +99,10 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-vintage-cream text-vintage-brown overflow-y-auto no-scrollbar">
-      {/* Vintage Header */}
+    <>
+      <Analytics />
+      <div className="flex flex-col h-screen bg-vintage-cream text-vintage-brown overflow-y-auto no-scrollbar">
+        {/* Vintage Header */}
       <header className="sticky top-0 z-50 bg-vintage-brown text-vintage-cream border-b-4 border-vintage-gold shadow-lg">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
@@ -309,6 +312,7 @@ const App: React.FC = () => {
         )}
       </main>
     </div>
+    </>
   );
 };
 
