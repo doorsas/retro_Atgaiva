@@ -158,7 +158,7 @@ const App: React.FC = () => {
                 Prikelkite senus prisiminimus
               </h2>
               <p className="text-lg text-vintage-sepia leading-relaxed border-l-4 border-vintage-gold pl-4 italic">
-                "Kiekviena nuotrauka - tai langas į praeitį. Leiskite mums ją atverti platčiai su modernių technologijų pagalba."
+                "Kiekviena nuotrauka - tai langas į praeitį. Leiskite mums ją atverti plačiai su modernių technologijų pagalba."
               </p>
             </div>
 
